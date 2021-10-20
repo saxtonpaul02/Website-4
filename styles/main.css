@@ -182,3 +182,24 @@ a img {
     opacity: 1;
     cursor: pointer;
 }
+
+.panel {
+    display: flex;
+    gap: 1rem;
+}
+  
+.panel .text-wrapper {
+    flex: 1 1 auto;
+}
+  
+.panel .image-wrapper {
+    flex: 1 .6 auto;
+}
+  
+.panel h2 {
+    margin: 0;
+}
+  
+.panel .left {
+    order: -1;
+}
