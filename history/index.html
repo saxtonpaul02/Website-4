@@ -23,50 +23,80 @@
         <link rel="stylesheet" href="../webfontkit/stylesheet.css"/>
         <link rel="stylesheet" href="../styles/main.css"/>
     </head>
-    <body>
+    <body class="form">
         <header>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="">History</a></li>
-                    <li>Games
-                        <ul>
-                            <li><a href="../games/results/index.html">Game Results</a></li>
-                            <li><a href="../games/summaries/index.html">Game Summaries</a></li>
-                            <li><a href="../games/moments/index.html">Notable Moments</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../games/results/index.html">Game Results</a></li>
+                    <li><a href="../games/summaries/index.html">Game Summaries</a></li>
+                    <li><a href="../games/moments/index.html">Notable Moments</a></li>
                     <li><a href="../about/index.html">About</a></li>
                     <li><a href="../form/index.html">Form</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <article>
-                <figure>
-                    <img src="../images/1905-Utah-football-team.jpg" alt="Image of the 1905 U of U football 
-                    team" width="600" loading="lazy">
-                    <figcaption>The 1905 U of U football team</figcaption>
-                </figure>
-                <figure>
-                    <img src="../images/1896-BYA-football-team.png" alt="Image of the 1896 BYA football team" 
-                    width="600" loading="lazy">
-                    <figcaption>The 1896 BYA football team</figcaption>
-                </figure>
-                <h1 class="heading">History</h1>
+            <article class="panel">
+                <div class="text-wrapper">
+                    <h2 class="heading">History</h2>
                     <p>The University of Deseret was established in 1850 to be the state university. The 
                     name changed in 1892 to the University of Utah to align with what the state ended up 
                     being called. This was also the Utes first football season. BYA's first season was in 
                     1896. The name was changed to Brigham Young University in 1903, but because of a 
                     player death, BYA/BYU did not play football from about 1900 to 1920.</p>
-                <section>
-                    <h2 class="heading">The Holy War Begins</h2>
+                </div>
+                <div class="image-wrapper left">
+                    <figure>
+                        <img src="../images/1905-Utah-football-team.jpg" alt="Image of the 1905 U of U football 
+                        team" widthloading="lazy">
+                        <figcaption>The 1905 U of U football team</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="panel">
+                <div class="text-wrapper left">
+                    <section>
+                        <h3 class="heading">The Holy War Begins</h3>
                         <p>Over the years, these two schools have met in football competition 101 times,
-                        but the first meet up was on April 6, 1986. The Utes came up with a 12-4 
-                        victory. It's hard to believe that BYU really safetied the Utes twice, but the only  
-                        known facts about this meeting is the location (Salt Lake City) and the final score.</p> 
-                </section>
+                        but the first meet up was on April 6, 1886 in Salt Lake City. In that meeting, 
+                        BYA put up a severly impressive score (because of its rarity), but the Utes came 
+                        out with the 12-4 victory, according to the local newspaper the following day.</p> 
+                    </section>
+                </div>
+                <div class="image-wrapper">
+                    <figure>
+                        <img src="../images/1896-BYA-football-team.png" alt="Image of the 1896 BYA football team" 
+                        width="600" loading="lazy">
+                        <figcaption>The 1896 BYA football team</figcaption>
+                    </figure>
+                </div>
+                <a href="" class="button">Learn More</a>  
+            </article>
+            <article class="panel">
+                <h2 class="heading">Game Results</h2>
+                    <ol>
+                        <li><a href="">19th Century</a></li>
+                        <li><a href="">1900-1949</a></li>
+                        <li><a href="">1950-1999</a></li>
+                        <li><a href="">2000-Present Day</a></li>
+                    </ol>
+                    <a href="" class="button">Learn More</a>
             </article>
         </main>
+        <footer>
+            <p>One of the greatest rivalries in college football</p>
+            <svg height="130" width="500">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: #0062B8;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color: #CC0000;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                <text fill="#fff" font-size="12" font-family="sairathin" x="50" y="50">The</text>
+                <text fill="#fff" font-size="36" font-family="sairathin" x="30" y="82">HolyWar</text>
+                </svg>
+        </footer>
     </body>
 </html>

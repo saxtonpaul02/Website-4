@@ -1,4 +1,4 @@
-picture img {
+img {
     width: 100%;
     display: block;
 }
@@ -14,7 +14,7 @@ picture img {
     --black: #000;
 }
 
-header{
+header {
     padding: 1rem;
 }
 
@@ -38,12 +38,14 @@ footer {
 main {
     margin: 0 auto;
     padding: 0 1rem;
-    max-width: 50rem;
+    max-width: 450px;
+    align-self: center;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
+    color: var(--blue)
 }
 
 a:hover:not(.button) {
@@ -136,9 +138,8 @@ a img {
 }
 
 .cards {
-    max-width: 400px;
     margin-bottom: 1rem;
-    display: inline-block;
+    display: flex;
 }
 
 .card {
@@ -174,7 +175,7 @@ a img {
     right: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 300ms ease;
+    transition: opacity 200ms ease;
     background-color: rgba(0,0,0,.3);
 }
 
@@ -183,23 +184,31 @@ a img {
     cursor: pointer;
 }
 
-.panel {
-    display: flex;
-    gap: 1rem;
-}
-  
-.panel .text-wrapper {
-    flex: 1 1 auto;
-}
-  
-.panel .image-wrapper {
-    flex: 1 .6 auto;
-}
-  
-.panel h2 {
+.form header nav ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
+    display: flex;
 }
-  
-.panel .left {
-    order: -1;
+
+.form header nav {
+    display: flex;
+    align-items: baseline;
+}
+
+.form header nav > * {
+    flex: 1 0 auto;
+}
+
+.form header nav ul li {
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.form header nav a {
+    white-space: nowrap;
+}
+
+svg {
+    width: 200px;
 }
