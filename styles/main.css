@@ -202,7 +202,7 @@ header nav a {
     white-space: nowrap;
     display: block;
     padding: 1rem;
-    color: var(--white);
+    color: var(--blue);
     background-color: var(--white);
     opacity: 0;
     transition: color 100ms ease, opacity 100ms ease;
