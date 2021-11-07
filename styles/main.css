@@ -36,24 +36,14 @@ footer {
 }
 
 main {
-    margin: 0 auto;
     padding: 0 1rem;
-    max-width: 450px;
+    max-width: 1000px;
     align-self: center;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--blue)
-}
-
-a:hover:not(.button) {
-    color: var(--red);
-}
-
-a:active:not(.button) {
-    color: var(--black);
 }
 
 .heading {
@@ -64,6 +54,8 @@ a:active:not(.button) {
 
 body {
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
 }
 
 body:not(.heading) {
@@ -184,31 +176,77 @@ a img {
     cursor: pointer;
 }
 
-.form header nav ul {
+header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: space-around;
 }
 
-.form header nav {
+header nav {
     display: flex;
-    align-items: baseline;
+    justify-content: center;
 }
 
-.form header nav > * {
+header nav > * {
     flex: 1 0 auto;
+    max-width: 1200px;
 }
 
-.form header nav ul li {
-    flex: 1 0 0;
+header nav ul li {
     text-align: center;
 }
 
-.form header nav a {
+header nav a {
     white-space: nowrap;
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--white);
+    opacity: 0;
+    transition: color 100ms ease, opacity 100ms ease;
+}
+
+header nav a:hover {
+    color: var(--black);
+    opacity: .4;
 }
 
 svg {
     width: 200px;
+}
+
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+.loader:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid var(--white);
+    border-color: var(--blue) transparent var(--red) transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+  
+@keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
 }
